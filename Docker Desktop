@@ -9,6 +9,7 @@ Step 1: Enable WSL 2 (Recommended)
        Use code with caution.
     3. Restart your computer if prompted to complete the setup.
     4. (Optional) Ensure it is updated by running wsl --update
+
 Step 2:    https://docs.docker.com/desktop/setup/install/windows-install/ (official link for software)
 
 
@@ -56,7 +57,7 @@ If it returns a version number (e.g., 2.x.x), Chocolatey is successfully install
 
 Using Chocolatey:
 
-    To download and install Docker Desktop on Windows using Chocolatey, follow these simple steps:
+    <--------    To download and install Docker Desktop on Windows using Chocolatey, follow these simple steps:
 
 Step 1: Open PowerShell as an Administrator
 
@@ -79,4 +80,18 @@ Step 3: Complete the Setup
 If you want to customize your setup or ensure your system is fully prepared, let me know if you would like to:
 • Check your system's WSL2 or Virtualization requirements
 • Install a specific version of Docker Desktop
-• Verify your installation using the Command Line
+• Verify your installation using the Command Line    ---------->
+
+
+
+Step 3: Run the Setup
+
+1. Double-click the downloaded installer (or right-click and choose Run as administrator).
+2. When prompted, ensure "Use WSL 2 instead of Hyper-V" is checked.
+3. Follow the on-screen prompts and click Close and restart once the installation succeeds.
+
+Step 4: Verify the Installation
+
+1. Launch Docker Desktop from your Start Menu and accept the Service Agreement.
+2. Open PowerShell or Command Prompt and run the following command to ensure the Docker daemon is responding:bash
+docker run hello-world
